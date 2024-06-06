@@ -5,15 +5,7 @@ import (
 	"fmt"
 	"math"
 	"os"
-	"strconv"
-	"strings"
 )
-
-type Node struct {
-	val   int
-	left  *Node
-	right *Node
-}
 
 func isBalanced(tree *Node) bool {
 	return TreeHeightDiff(tree) != 1
@@ -29,25 +21,6 @@ func TreeHeightDiff(tree *Node) int {
 		return -1
 	}
 	return int(math.Max(float64(left), float64(right))) + 1
-}
-
-func buildTree(nodes []string, pos *int) *Node {
-	val := nodes[*pos]
-	*pos++
-	if val == "x" {
-		return nil
-	}
-	v, _ := strconv.Atoi(val)
-	left := buildTree(nodes, pos)
-	right := buildTree(nodes, pos)
-	return &Node{v, left, right}
-}
-
-func splitWords(s string) []string {
-	if s == "" {
-		return []string{}
-	}
-	return strings.Split(s, " ")
 }
 
 func BalanceOnTree() {
