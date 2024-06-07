@@ -78,3 +78,10 @@ func Main() {
 		}
 	}
 }
+
+/*
+	Letcode's similar question:
+	110. Easy - https://leetcode.com/problems/balanced-binary-tree/description/
+	297. Hard - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
+	226. Easy - https://leetcode.com/problems/invert-binary-tree/description/
+*/
