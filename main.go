@@ -8,6 +8,7 @@ import (
 
 	day1dfsontree "github.com/khoaphungnguyen/algorithm-practice/day-1-DFSonTree"
 	day2bst "github.com/khoaphungnguyen/algorithm-practice/day-2-BST"
+	day3backtracking "github.com/khoaphungnguyen/algorithm-practice/day-3-BackTracking"
 )
 
 func main() {
@@ -16,6 +17,7 @@ func main() {
 Please select a topic you want to try:
 1. Depth-First Search on Tree
 2. Binary Search Tree
+3. Backtracking
 Press 'd' to exit.`)
 
 		reader := bufio.NewReader(os.Stdin)
@@ -31,6 +33,8 @@ Press 'd' to exit.`)
 			day1dfsontree.Main()
 		case "2":
 			day2bst.Main()
+		case "3":
+			day3backtracking.Main()
 		case "d":
 			fmt.Println("Exiting the program.")
 			return

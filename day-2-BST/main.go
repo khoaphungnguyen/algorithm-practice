@@ -52,7 +52,8 @@ func Main() {
 		fmt.Println(`Please select an option:
 		1. Check if the tree is valid BST
 		2. Insert a node into a BST correctly
-		3. Find the Lowest Common Ancestor of BST
+		3. Find the Lowest Common Ancestor of a Binary Search Tree
+		4. Find the Lowest Common Ancestor of a Binary Tree
 		Press 'd' to exit`)
 		input, err := reader.ReadString('\n')
 		if err != nil {
@@ -68,8 +69,11 @@ func Main() {
 			fmt.Println("Enter tree and val input for inserting a node into a BST tree (e.g., '8 4 2 1 x x 3 x x 6 x x 12 10 x x 14 x 15 x x -- 7'):")
 			InsertBst()
 		case "3":
-			fmt.Println("Enter tree, val1, and val2 input for finding LCA of BST (e.g., '6 2 0 x x 4 3 x x 5 x x 8 7 x x 9 x x--2--4-->2'):")
+			fmt.Println("Enter tree, val1, and val2 input for finding LCA of the Binary Search Tree(e.g., '6 2 0 x x 4 3 x x 5 x x 8 7 x x 9 x x--2--4-->2'):")
 			LcaOnBST()
+		case "4":
+			fmt.Println("Enter tree, node1, and node2 input for finding LCA of the Binary Tree (e.g., '6 4 3 x x 5 x x 8 x x--4--8-->6'):")
+			AdvancedLca()
 		case "d":
 			fmt.Println("Exiting the BST program.")
 			return
@@ -85,4 +89,5 @@ func Main() {
 	98. Medium - https://leetcode.com/problems/validate-binary-search-tree/description
 	791. Medium - https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
 	235.Medium - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+	236.Medium - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 */
