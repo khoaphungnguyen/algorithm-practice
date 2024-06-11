@@ -39,6 +39,11 @@ func Main() {
 	{
 		fmt.Println(`Please select an option:
 		1. Find all the root-to-leaf paths of a ternary tree 
+		2. Find a list of strings in lexicographical order.
+		3. Find all possible letter combinations the phone
+		4. Partition A String Into Palindromes
+		5. Generate All Valid Parentheses
+		6. General All Permutations
 		Press 'd' to exit`)
 		input, err := reader.ReadString('\n')
 		if err != nil {
@@ -47,12 +52,34 @@ func Main() {
 		input = strings.TrimSpace(input)
 		switch input {
 		case "1":
-			fmt.Println("Enter tree input for finnd all paths of ternary tree (e.g., '1 3 2 1 5 0 3 0 4 0'):")
+			fmt.Println("Enter tree input for find all paths of ternary tree (e.g., '1 3 2 1 5 0 3 0 4 0'):")
 			TernaryTreePaths()
+		case "2":
+			fmt.Println("Enter a number for fiding a list of strings in lexicographical order(e.g., '2'):")
+			LetterCombination()
+		case "3":
+			fmt.Println("Enter phone number that contains digits 2-9 to find all possible letter combinations the phone number(e.g., '23'):")
+			LetterCombinationsOfPhoneNumber()
+		case "4":
+			fmt.Println("Enter a string s for partitioning s such that every substring of the partition is a palindrome(e.g., 'aba'):")
+			Partition()
+		case "5":
+			fmt.Println("Enter an integer n for generating all strings with n matching parentheses(e.g., '2'):")
+			GenerateParentheses()
+		case "6":
+			fmt.Println("Enter a string of unique letters for finding all of its distinct permutations.(e.g., 'abc'):")
+			Permutations()
 		default:
 			fmt.Println("Invalid option. Please try again.")
 			fmt.Println()
 		}
 	}
-
 }
+
+/*
+	Letcode's similar question:
+	17. Medium - https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+	131. Medium - https://leetcode.com/problems/palindrome-partitioning/description/
+	22. Medium - https://leetcode.com/problems/generate-parentheses/description/
+	46. Medium - https://leetcode.com/problems/permutations/description/
+*/
