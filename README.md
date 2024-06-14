@@ -35,6 +35,9 @@ Run the `main` function to start the program. You will be prompted to select a t
 4. Partition a string into palindromes
 5. Generate all valid parentheses
 6. Generate all permutations
+7. Work Break
+8. Number of Ways to Decode a Message
+9. Minimum Number of Coins to Make Up a Given Value
 
 #### Sample Commands
 
