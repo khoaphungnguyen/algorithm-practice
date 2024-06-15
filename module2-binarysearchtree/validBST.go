@@ -1,4 +1,4 @@
-package day2bst
+package module2binarysearchtree
 
 import (
 	"bufio"

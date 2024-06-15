@@ -1,4 +1,4 @@
-package day3backtracking
+package module3backtracking
 
 import (
 	"bufio"

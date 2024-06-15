@@ -1,4 +1,4 @@
-package day1dfsontree
+package module1depthfirstsearch
 
 import (
 	"bufio"

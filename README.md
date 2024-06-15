@@ -1,6 +1,6 @@
 # Daily Coding Topics
 
-This project is designed to help you practice different coding topics each day. The topics include Depth-First Search on Trees, Binary Search Trees, Backtracking and more. Each topic has a set of related problems to solve.
+This project is designed to help you practice different coding topics each module. The topics include Depth-First Search on Trees, Binary Search Trees, Backtracking and more. Each topic has a set of related LeetCode problems to solve.
 
 ## How to Use
 
@@ -8,7 +8,7 @@ Run the `main` function to start the program. You will be prompted to select a t
 
 ### Topics and Concepts
 
-#### Day 1: Depth-First Search on Trees
+#### Module 1: Depth-First Search
 
 **Concepts:**
 
@@ -16,7 +16,7 @@ Run the `main` function to start the program. You will be prompted to select a t
 2. Deserialize and serialize a tree
 3. Invert a binary tree
 
-#### Day 2: Binary Search Tree
+#### Module 2: Binary Search Tree
 
 **Concepts:**
 
@@ -25,7 +25,7 @@ Run the `main` function to start the program. You will be prompted to select a t
 3. Find the Lowest Common Ancestor of a Binary Search Tree
 4. Find the Lowest Common Ancestor of a Binary Tree
 
-#### Day 3: Backtracking
+#### Module 3: Backtracking
 
 **Concepts:**
 
@@ -38,6 +38,8 @@ Run the `main` function to start the program. You will be prompted to select a t
 7. Work Break
 8. Number of Ways to Decode a Message
 9. Minimum Number of Coins to Make Up a Given Value
+10. Combination Sum
+11. Subsets
 
 #### Sample Commands
 
@@ -50,6 +52,6 @@ When prompted, enter `3` to select Backtracking. Then choose the specific proble
 ### Additional Notes
 
 - Ensure your Go environment is set up correctly.
-- Each day's topic and problem set is implemented in separate packages (`day1dfsontree`, `day2bst`, `day3backtracking`).
+- Each module's topic and problem set is implemented in separate packages (`module1depthfirstsearch`, `module2binarysearchtree`, `module3backtracking`).
 
 Feel free to explore and practice each topic. Happy coding!

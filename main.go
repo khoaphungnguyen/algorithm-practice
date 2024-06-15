@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	day1dfsontree "github.com/khoaphungnguyen/algorithm-practice/day-1-DFSonTree"
-	day2bst "github.com/khoaphungnguyen/algorithm-practice/day-2-BST"
-	day3backtracking "github.com/khoaphungnguyen/algorithm-practice/day-3-BackTracking"
+	module1depthfirstsearch "github.com/khoaphungnguyen/algorithm-practice/module1-depthfirstsearch"
+	module2binarysearchtree "github.com/khoaphungnguyen/algorithm-practice/module2-binarysearchtree"
+	module3backtracking "github.com/khoaphungnguyen/algorithm-practice/module3-backtracking"
 )
 
 func main() {
@@ -30,11 +30,11 @@ Press 'd' to exit.`)
 		input = strings.TrimSpace(input)
 		switch input {
 		case "1":
-			day1dfsontree.Main()
+			module1depthfirstsearch.Main()
 		case "2":
-			day2bst.Main()
+			module2binarysearchtree.Main()
 		case "3":
-			day3backtracking.Main()
+			module3backtracking.Main()
 		case "d":
 			fmt.Println("Exiting the program.")
 			return
